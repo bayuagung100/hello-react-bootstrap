@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Row, Col, Media, Alert, Badge, Button, Breadcrumb, ButtonGroup, ButtonToolbar, Card } from "react-bootstrap";
+import { Container, Row, Col, Media, Alert, Badge, Button, Breadcrumb, ButtonGroup, ButtonToolbar, Card, Carousel } from "react-bootstrap";
 
 class App extends Component {
   render() {
@@ -10,6 +10,29 @@ class App extends Component {
           <Breadcrumb.Item href="/">Info</Breadcrumb.Item>
           <Breadcrumb.Item active>Data</Breadcrumb.Item>
         </Breadcrumb>
+        <Carousel>
+          <Carousel.Item>
+            <img className="d-block w-100" src="https://s3-ap-southeast-1.amazonaws.com/niomic/img/sample/travel1.jpeg" alt="Travel 1" />
+            <Carousel.Caption>
+              <h3>Diskon Hotel</h3>
+              <p>diskon sampai 500 rb.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="d-block w-100" src="https://s3-ap-southeast-1.amazonaws.com/niomic/img/sample/travel2.png" alt="Travel 2" />
+            <Carousel.Caption>
+              <h3>Tiket Pesawat Murah</h3>
+              <p>Travel jadi makin asik.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="d-block w-100" src="https://s3-ap-southeast-1.amazonaws.com/niomic/img/sample/travel3.jpeg" alt="Travel 3" />
+            <Carousel.Caption>
+              <h3>Diskon Kereta</h3>
+              <p>Diskon sampai 35 rb.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+        </Carousel>
         <Row>
           <Col>
             <Media>
